@@ -64,6 +64,8 @@ document.addEventListener ("DOMContentLoaded", function() {
 	/* https://www.w3schools.com/jsref/met_document_createelement.asp */
 	/* https://www.w3schools.com/jsref/met_node_appendchild.asp */
 	/* https://www.w3schools.com/jsref/jsref_foreach.asp */
+	/* https://www.w3schools.com/jsref/prop_html_innerhtml.asp */
+	/* Original demo felt a bit complicated given I wasn't making individual pages so I consulted other resources + a classmate for the following */
 
 	naraArtworkDatabase.artwork.forEach (artwork => { /* Consulted classmate on help with this */
 		let artworkElement = document.createElement ("div")
@@ -79,5 +81,10 @@ document.addEventListener ("DOMContentLoaded", function() {
 		artworkElement.innerHTML = artworkHTML
 		artworkContainer.appendChild(artworkElement);
 	});
+
+	/* https://scrollrevealjs.org/guide/customization.html */
+	/* https://medium.com/@matthewdtotheg/animations-with-scrollreveal-js-e4062961cbb9 */ 
+
+	ScrollReveal().reveal(".artwork", {delay: 500});;
 });
 
